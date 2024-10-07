@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+</head>
+<body>
+    <h1>Adapatação de tamanho de imagem</h1>
+    <p>Tentando ver se muda o tamanho da imagem</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Foto-M.png" type="image/png">
+        <img src="imagens/Foto-G.png" alt="">
+    </picture>
+    <h1>reproduzindo áudio</h1>
+    <p>reproduzindo áudio em HTML5</p>
+    <audio src="Never Play - Jeremy Blake.mp3" controls> </audio>
+    <!--temos outras formas de arquivo como mp3, wav, ogg-->
+    <h1>Outras formas</h1>
+    <audio preload="none" controls loop> <!--loop para recomeçar a música automaticamente-->
+        <source src="Never Play - Jeremy Blake.mp3" type="audio/mpeg">
+    </audio>
+    <h1>reproduzindo vídeo</h1>
+    <p>vamos aprender a reproduzir vídeos</p>
+</body>
+</html>

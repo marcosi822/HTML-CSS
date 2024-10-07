@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="shortcut icon" href="gta-vi-scaled.ico" type="image/x-icon">
+    <!-- Não esquecer do box-shadow, ele precisa de 1px 1px 1px 1px black  -->
+    <style>
+        body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: linear-gradient(45deg, #2E47C3, #8940C1, #E745BF, #FF8296, #E48343);
+        margin: 0px;
+        color: rgb(233, 233, 223);
+        }
+        header {
+            background-color: black;
+            margin: 0px;
+            padding: 10px;
+        }
+        nav {
+            color: #8940C1;
+            padding: 4px;
+            text-align: center;
+            font-style: oblique;
+            margin-right: auto;
+            word-spacing: 50px;
+            margin: 10px;
+            
+        }
+        nav > a {
+            text-decoration: solid;
+        }
+        a:visited {
+            color: #8940C1;
+        }
+
+        main {
+            background-color: rgb(56, 56, 56);
+            padding: 5px;
+        }
+        article {
+            background-color: rgb(31, 31, 31);
+            padding: 6px;
+            margin: 5px 5px 10px 5px;
+            border-radius: 7px 0px;
+        }
+        article > aside {
+            background-image: linear-gradient(45deg, #2E47C3, #8940C1, #E745BF, #FF8296, #E48343);
+            box-shadow: inset 2px 5px 
+            5px rgba(0, 0, 0, 0.226);
+            border-radius: 6px;
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            margin: 0px;
+            padding: 10px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article > .temas {
+            text-align: auto;
+            word-spacing: 10px;
+        } 
+        .gta {
+            background-color: rgb(31, 31, 31);
+            padding: auto;
+            border-radius: 7px 0px;
+            margin: 10px 10px 20px 10px;
+        }
+        h2 {
+            background-image: linear-gradient(45deg, #2E47C3, #8940C1, #E745BF, #FF8296, #E48343);
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dando uma cara melhor</h1>
+        <nav>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+            <a href="#">Facebook</a>
+            <a href="#">Threads</a>
+        </nav>
+    </header>    
+    <main>
+        <section id="assunto">
+
+        </section>
+        <section id="noticia">
+            <article>
+                <h2 class="temas">Sports / Mídia / Gameplay</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur a, nam dolorem unde error quo dignissimos magni. Dolores beatae nesciunt eum hic in dolorum similique nisi nihil numquam itaque?</p>
+                <aside>
+                    <p>Escrito por Guilherme "Marco" Marcosi</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <main>
+        <section>
+            <article class="gta">
+                <h2>Gta VI</h2>
+                <p>É um dos jogos mais esperados do ano de 2025, mesmo trazendo poucos vazamentos de como será a gameplay, mas pelo sucesso da franquia, já é gerada muita expectativa.</p>
+                <p>Levando em consideração os trailers, o jogo tera belos gráficos, uma gameplay cada vez mais fluída, uma história coesa e terá um mapa ainda ainda maior. No entanto, é preciso lembrar que exigirá muito dos hardwares, então certifique das exigências abaixo:</p>
+                <ul>
+                    <li>GPU: GeForce RTX 2060 SUPER or Radeon RX 5700 XT or Arc A770</li>
+                    <li>CPU: Core i7-12700 or Ryzen 7 7800X3D</li>
+                    <li>Memória: 12 GB de RAM</li>
+                    <li>DirectX: Versão 12</li>
+                    <li>Armazenamento: 70 GB de espaço disponível</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Marco</p>
+    </footer>
+    </section>
+</body>
+</html>
