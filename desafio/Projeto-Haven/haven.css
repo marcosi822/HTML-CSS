@@ -26,6 +26,9 @@ header {
     margin: 0px;
     padding: 6px;
     background-image: linear-gradient(to bottom, var(--roxo), #532a74);
+    color: var(--creme);
+    text-align: center;
+    box-shadow: 1px 5px 2px rgba(0, 0, 0, 0.226);
 }
 
 header > h1 {
@@ -34,10 +37,9 @@ header > h1 {
     text-align: center;
 }
 
-header {
-    color: var(--creme);
-    text-align: center;
-    box-shadow: 1px 5px 2px rgba(0, 0, 0, 0.226);
+header > p {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav {
