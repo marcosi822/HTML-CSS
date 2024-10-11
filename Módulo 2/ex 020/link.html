@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de links</title>
+    <style>
+        body {
+            background-color: rgb(95, 95, 95);
+        }
+        a {
+           color: rgb(65, 65, 65);
+           text-decoration: none;
+        }
+        a:visited {
+            color: rgb(255, 251, 23);
+        }
+        a:hover {
+            color: rgb(202, 255, 104);
+            text-decoration: underline;
+        }
+        
+        a::after {
+            content: '⇐';
+            color: aliceblue;
+        }
+
+        a::before {
+            content: '⇒';
+            color: aliceblue;
+        }
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element 
+            > = children (filho)
+        
+        */
+    </style>
+</head>
+<body>
+
+
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/nipgaming/?hl=pt-br" target="_blank">instagram</a></li>
+        <li><a href="https://www.threads.net/@nipgaming" target="_blank">Threads</a></li>
+        <li><a href="https://www.facebook.com/NIPGaming/" target="_blank">facebook</a></li>
+    </ul>
+    
+</body>
+</html>
