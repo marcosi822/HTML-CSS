@@ -29,18 +29,3 @@
 <a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%201/ex%20014/">Modulo 1-Ex 014</a>
 
 <a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%201/ex%20015/">Modulo 1-Ex 015</a>
-
-<a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%201/ex%20016/">Modulo 2-Ex 01 </a>
-
-<a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%201/ex%20017/">Modulo 2-Ex 01 </a>
-
-<a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%201/ex%20018/">Modulo 2-Ex 01 </a>
-
-<a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%201/ex%20019/">Modulo 2-Ex 01 </a>
-
-<a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%201/ex%20020/">Modulo 2-Ex 01 </a>
-
-<a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%201/ex%20021/">Modulo 2-Ex 021</a>
-
-<a href="https://marcosi822.github.io/HTML-CSS/M%C3%B3dulo%202/ex%20022/">Modulo 2-Ex 022</a>
-
