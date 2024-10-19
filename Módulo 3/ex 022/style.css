@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.quadrado {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 0.5px solid rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+}
+
+#fundo-1 {
+    background-color: aquamarine;
+}
+
+#fundo-2 {
+        background-image: linear-gradient(aquamarine, mediumspringgreen);
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-image: url(img/wallpaper005.jpg);
+    width: 100%;
+}
