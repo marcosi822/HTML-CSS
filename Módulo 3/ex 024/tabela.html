@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia de uma Tabela</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+        body {
+            font-family: "Tilt Warp";
+            font-size: 400;
+            letter-spacing: 0.1px;
+            background-color: rgb(26, 26, 26);
+            color: aliceblue;
+            padding: 1%;
+        }
+
+        h1 {
+            font-family: Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 98vh;
+            text-align: center;
+            width: 75%;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgba(0, 0, 0, 0.603);
+        }
+        
+        tr:nth-child(odd) {
+
+            /*caso a tabela seja muito grande é possível fazer o efeito zebrado com esse comando*/
+
+            /* odd = impar / even = par */
+        }
+
+        td {
+            border: 1px solid rgb(80, 80, 80);
+            padding: 5px;
+        }
+
+        th {
+            border: 1px solid rgb(80, 80, 80);
+            padding: 5px;
+        }
+
+        .player {
+            width: 200px;
+        }
+
+        .org {
+            width: 200px;
+        }
+
+        .dpi {
+            width: 100px;
+        }
+
+        .sensi {
+            width: 150px;
+        }
+
+        .ads {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anatomia de uma Tabela</h1>
+    <!--TABLE
+            THEAD:
+                TD, TR, TH
+            TBODY:
+                TD, TR, TH
+            HFOOT: 
+                TD, TR, TH    
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" class="player">Profissional</th>
+                <th scope="col" class="org">Equipe</th>
+                <th scope="col" class="dpi">DPI</th>
+                <th scope="col" class="sensi">Sensibilidade</th>
+                <th scope="col" class="ads">Ads</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Psycho</td>
+                <td>NIP</td>
+                <td>400</td>
+                <td>10</td>
+                <td>83</td>
+            </tr>
+            <tr>
+                <td>Nesk</td>
+                <td>Team Liquid</td>
+                <td>400</td>
+                <td>12</td>
+                <td>31<br>52</td>
+            </tr>
+            <tr>
+                <td>Paluh</td>
+                <td>Team Liquid</td>
+                <td>400</td>
+                <td>12</td>
+                <td>24<br>39</td>
+            </tr>
+            <tr>
+                <td>Cameram4n</td>
+                <td></td>
+                <td>800</td>
+                <td>9</td>
+                <td>33<br>54</td>
+            </tr>
+            <tr>
+                <td>Stk</td>
+                <td>RazaH Company</td>
+                <td>400</td>
+                <td>8</td>
+                <td>58<br>100</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

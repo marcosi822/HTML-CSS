@@ -3,14 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de borda</title>
+    <title>formulário</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            height: calc(100%-50px);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        form {
+            padding: 1%;
+            display: flex;
+            justify-self: center;
+            flex-direction: column;
+            width: 20%;
+            border: 1px black solid;
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <span></span>
-        <p>ola</p>
-    </div>
-    
+    <h3>Preencha o formulário</h3>
+    <form action="">
+        <label for="NomeDoAluno">Nome Completo:</label>
+        <input type="" name="" id="">
+
+        <br><hr>
+
+        <label for="Senha">Senha:</label>
+        <input type="password" name="senha" id="">
+
+        <br><hr>
+
+        <label for="checbox">Esportes favoritos:</label>
+        <input type="checkbox" name="" id="Futebol"><label for="Futebol">Futebol</label>
+        <input type="checkbox" name="" id="Vôlei"><label for="Vôlei">Vôlei
+        </label>
+        <input type="checkbox" name="" id="Basquete"><label for="Basquete">Basquete</label>
+        <input type="checkbox" name="" id="Handbol"><label for="Handbol">Handbol</label>
+
+        <br><hr>
+
+        <label for="Masculino">Masculino</label>
+        <input type="radio" name="" id="Masculino">
+        <label for="Feminino">Feminino</label>
+        <input type="radio" name="" id="Feminino">
+
+        <br><hr>
+
+        <label for="email">email:</label>
+        <input type="email" name="" id="email">
+
+    </form>
 </body>
 </html>

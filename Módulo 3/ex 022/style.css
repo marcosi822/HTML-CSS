@@ -24,3 +24,11 @@ body {
     background-image: url(img/wallpaper005.jpg);
     width: 100%;
 }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-
+}
