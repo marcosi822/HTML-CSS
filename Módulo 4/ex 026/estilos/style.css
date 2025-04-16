@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(200deg, rgb(19, 18, 18), rgb(26, 23, 23), rgb(46, 38, 49));
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    
+}
+
+section#tela {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 750px;
+    width: 750px;
+   background: url('../imagens/Cel-img.png');
+}
+
+iframe#tela {
+    position: relative;
+    top: 0.1%;
+    left: 30%;
+    height: 750px;
+    background-size: cover;
+}
+
+
+
+section#redes img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 0%;
+    
+}
