@@ -7,6 +7,7 @@
 }
 
 body {
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(200deg, rgb(19, 18, 18), rgb(26, 23, 23), rgb(46, 38, 49));
@@ -37,11 +38,63 @@ iframe#tela {
     background-size: cover;
 }
 
-
+section#redes {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+}
 
 section#redes img {
-    width: 200px;
+    width: 50px;
     margin: 10px;
-    border-radius: 0%;
-    
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+section#redes img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.562);
+    animation: mouse 1s step-start;
+
+}
+
+@keyframes mouse{
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translate(-5px);
+
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(70%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#redes.animar {
+    animation: slide 0.5s forwards;
+}
+
+#redes.animar a:nth-child(2) {
+    animation: slide 1s forwards;
+}
+
+#redes.animar a:nth-child(3) {
+    animation: slide 1.5s forwards;
+}
+
+#redes.animar a:nth-child(4) {
+    animation: slide 2s forwards;
+}
+
+#redes.animar a:nth-child(5) {
+    animation: slide 2.5s forwards;
 }
