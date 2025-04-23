@@ -27,21 +27,23 @@ section#tela {
 
     height: 750px;
     width: 750px;
-   background: url('../imagens/Cel-img.png');
+    background: url('../imagens/Cel-img.png');
 }
 
 iframe#tela {
     position: relative;
-    top: 0.1%;
-    left: 30%;
-    height: 750px;
-    background-size: cover;
+    top: 8.5%;
+    left: 31%;
+    width: 290px;
+    height: 619px;
+    border-radius: 40px;
 }
 
 section#redes {
     display: flex;
     flex-direction: column;
     justify-self: end;
+    align-content: center;
 }
 
 section#redes img {
