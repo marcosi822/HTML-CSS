@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Tilt+Warp&display=swap');
+
+* {
+    font-family: "Roboto Flex" , sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgba(96, 52, 255, 0.781);
+    margin-top: 2%;
+}
+
+h1.titulo {
+    color: rgb(37, 30, 24);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-LEFT: 50%;
+    font-size: 18px;
+    transform: translate(-50%);
+}
+
+fieldset {
+    display: flex;
+    border: 0;
+}
+
+fieldset > .campo {
+    padding-right: 45px;
+}
+
+input[type="radio"], input[type="email"], input[type="text"],  input[type="checkbox"] {
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.campo label {
+    display: block;
+}
+
+.parte {
+    padding-top: 25px;
+}
+
+div.campo, #ifrontend {
+    margin-top: 10px;
+}
+
+.multiplas {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.botao {
+    background-color: rgb(20, 255, 145);
+    text-align: center;
+    font-size: 20px;
+
+    display: flex;
+    justify-self: center;
+
+    margin: 25px 0px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px; 
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+.accordion {
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.199);
+
+    padding: 15px 18px;
+    border-radius: 8px;
+    
+    text-align: start;
+}
+
+.accordion-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.accordion-body {
+    color: rgba(0, 0, 0, 0.781);
+
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition: opacity .4s ease-in-out;
+}
+
+.ativo {
+    transition: .2s;
+}
+
+.accordion-body.ativo {
+    height: 100%;
+    opacity: 1;
+    padding: 10px 0px;
+}
+
+.accordion-header span {
+    max-width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden; /* para nao ultrapassar */
+    text-overflow: ellipsis; /*adiciona ... no final do texto caso estja transbordando */ 
+}
+
+.arrow {
+    transition: transform .2s linear;
+}
+
+.accordion:has(.ativo) .arrow {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a fazer um formulário</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <h1 class="titulo">Primeiro Formulário</h1>
+    <main>
+        <div class="formulario">
+            <form action="" autocomplete="off">
+                <fieldset>
+
+                    <div class="campo">
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="nome" id="inome" class="informacoes">
+                    </div>
+                    <div class="campo">
+                        <label for="isobrenome">Sobrenome: </label>
+                        <input type="text" name="sobrenome" id="isobrenome" class="informacoes" required>
+                    </div>
+
+                </fieldset>
+
+                    <div class="parte">
+
+                        <div class="campo">
+                            <label for="iemail">Email: </label>
+                                <input type="email" name="email" id="imeail" class="informacoes" required>
+                        </div>
+
+                        <div class="campo">
+                            
+                            <label>De qual lado aplicação você desenvolve?</label>
+                            <label for="ifrontend">
+
+                            <input type="radio" name="devweb" id="ifrontend" value="frontend" checked>Frontend
+                            </label>
+
+                            <label for="ibackend">
+                            <input type="radio" name="devweb" id="ibackend" value="backend">Backend
+
+                        </label>
+                        <label for="ifullstack">
+                            <input type="radio" name="devweb" id="ifullstack" value="fullstack">Fullstack
+                        </label>
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Senioridade</label>
+                        <select id="senioridade">
+                            <option selected disabled value="">Selecione</option>
+
+                            <option>Junior</option>
+                            <option>Senior</option>
+                            <option>Pleno</option>
+                        </select>
+                        </div>
+
+                    </div>
+
+                    <div class="multiplas">
+                        <label for="">Selecione as tecnologias que você utiliza:</label>
+                        <br>
+                        <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
+                        <label for="tecnologia1">HTML</label>
+
+                        <input type="checkbox" name="tecnologia2" id="tecnologia2" value="JavaScript">
+                        <label for="tecnologia2">JavaScript</label>
+                        
+                        <input type="checkbox" name="tecnologia3" id="tecnologia3" value="PHP">
+                        <label for="tecnologia3">PHP</label>
+                        
+                        <input type="checkbox" name="tecnologia4" id="tecnologia4" value="Kotlin">
+                        <label for="tecnologia4">Kotlin</label>
+                        
+                        <input type="checkbox" name="tecnologia5" id="tecnologia5" value="CSS">
+                        <label for="tecnologia5">CSS</label>
+                        
+                        <input type="checkbox" name="tecnologia6" id="tecnologia6" value="Python">
+                        <label for="tecnologia6">Python</label>
+                        
+                        <input type="checkbox" name="tecnologia7" id="tecnologia7" value="Rust">
+                        <label for="tecnologia7">Rust</label>
+                    </div>
+
+                <input class="botao" type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div id="container">
+                    <div class="accordion">
+                        <button class="accordion-header">
+                            <span>O principal</span>
+                            <i class="fa-solid fa-angle-down arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Sempre colocar o formulário dentro de "Form".</p>
+                        </div>
+                    </div>   
+
+                    <div class="accordion">
+                        <button class="accordion-header">
+                            <span>Pra que serve o label</span>
+                            <i class="fa-solid fa-angle-down arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Nunca esqueça de utilizar label nos formulários, <br>pois aumenta os mecanismos de buscas, criando uma ligação entre os parâmetros.</p>
+                        </div>
+                    </div>
+                        
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                <span>Qual a diferença de GET e POST</span>
+                                <i class="fa-solid fa-angle-down arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Caso a função seja para questões que não envolvam segurança, será possivel utilizar GET como method ou POST caso queria "esconder" as informações da URL e para enviar arquivos.</p>
+                        </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                <span>Questões de segurança</span>
+                                <i class="fa-solid fa-angle-down arrow"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Para senhas ou cartões de crédito será preciso aprender HTTPS.</p>
+                            </div>
+                        </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
