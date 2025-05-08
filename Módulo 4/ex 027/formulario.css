@@ -11,7 +11,7 @@
 
 body {
     background-color: rgba(96, 52, 255, 0.781);
-    margin-top: 2%;
+    margin: 1% 0%;
 }
 
 h1.titulo {
@@ -27,6 +27,14 @@ main {
     transform: translate(-50%);
 }
 
+form {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-LEFT: 50%;
+    transform: translate(-50%);
+}
+
 fieldset {
     display: flex;
     border: 0;
@@ -39,8 +47,7 @@ fieldset > .campo {
 input[type="radio"], input[type="email"], input[type="text"],  input[type="checkbox"] {
     border-radius: 5px;
     padding-top: 10px;
-    padding-right: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 
 .campo label {
@@ -60,15 +67,17 @@ div.campo, #ifrontend {
     margin-bottom: 10px;
 }
 
+.posicao-botao {
+    display: flex;
+    align-self: center;
+}
+
 .botao {
     background-color: rgb(20, 255, 145);
     text-align: center;
     font-size: 20px;
 
-    display: flex;
-    justify-self: center;
-
-    margin: 25px 0px;
+    margin: 25px 25px;
     height: 35px;
     width: 100px;
     border-radius: 5px; 
@@ -77,6 +86,9 @@ div.campo, #ifrontend {
 #container {
     display: flex;
     flex-direction: column;
+    margin-LEFT: 50%;
+    transform: translate(-50%);
+
 
     gap: 5px;
     max-width: 500px;

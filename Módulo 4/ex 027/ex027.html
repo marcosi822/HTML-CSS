@@ -11,16 +11,16 @@
     <h1 class="titulo">Primeiro Formulário</h1>
     <main>
         <div class="formulario">
-            <form action="" autocomplete="off">
+            <form action="" autocomplete="on" method="post">
                 <fieldset>
 
                     <div class="campo">
                         <label for="inome">Nome: </label>
-                        <input type="text" name="nome" id="inome" class="informacoes">
+                        <input type="text" name="nome" id="inome" class="informacoes" required autocomplete="username" minlength="4" size="30">
                     </div>
                     <div class="campo">
                         <label for="isobrenome">Sobrenome: </label>
-                        <input type="text" name="sobrenome" id="isobrenome" class="informacoes" required>
+                        <input type="text" name="sobrenome" id="isobrenome" class="informacoes" required autocomplete="additional-name" minlength="4" size="30">
                     </div>
 
                 </fieldset>
@@ -29,7 +29,7 @@
 
                         <div class="campo">
                             <label for="iemail">Email: </label>
-                                <input type="email" name="email" id="imeail" class="informacoes" required>
+                                <input type="email" name="email" id="imeail" class="informacoes" required autocomplete="email" size="30">
                         </div>
 
                         <div class="campo">
@@ -87,7 +87,10 @@
                         <label for="tecnologia7">Rust</label>
                     </div>
 
-                <input class="botao" type="submit" value="Enviar">
+                <fieldset class="posicao-botao">
+                    <input class="botao" type="submit" value="Enviar">
+                    <input class="botao" type="reset" value="Limpar">
+                </fieldset>
             </form>
         </div>
 
@@ -129,7 +132,26 @@
                             </button>
                             <div class="accordion-body">
                                 <p>Para senhas ou cartões de crédito será preciso aprender HTTPS.</p>
+                            </div>   
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                <span>Para que serve autocomplete no input?</span>
+                                <i class="fa-solid fa-angle-down arrow"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Utilizar autocomplete para acelerar processo de cadastor do usuário.</p>
                             </div>
+                        </div>    
+
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                <span>Para que serve min-lenght?</span>
+                            <i class="fa-solid fa-angle-down arrow"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Para ser aceito apenas campos com certas quantidades de caracteres.</p>
+                        </div>
                         </div>
         </div>
 

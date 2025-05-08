@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo formulário</h1>
+
+    <div>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Dados</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required>
+                </div>
+                <div>
+                    <label for="media">Media do aluno:</label>
+                    <input type="number" name="media" id="imedia" min="0" max="10" step="0.5">
+                </div>
+                <div>
+                    <label for="mes">Dia da prova:</label>
+                    <input type="date" name="mes" id="imes">
+                </div>
+                <div>
+                    <label for="hora">Horaário da prova:</label>
+                    <input type="time" name="hora" id="ihora">
+                </div>
+                <div>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                </div>
+            </fieldset>
+            <br>
+
+            <input type="submit" value="enviar">
+
+        </form>
+    </div>
+    
+</body>
+</html>
