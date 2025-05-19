@@ -59,3 +59,26 @@ Telas Grandes: acima de 1200px
     }
 
 }
+
+@media print { /* IMPRESSÃO */
+    * {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    main {
+        border: 2px solid rgba(0, 0, 0, 0.575);
+        width: 70vw;
+    }
+
+    img#cell {
+        display: none;
+    }
+
+    img#impresso {
+        display: block;
+    }
+
+    div::after { 
+        content: 'Impresso diretamente de Boston, ta bom campeão?';
+    }
+}
