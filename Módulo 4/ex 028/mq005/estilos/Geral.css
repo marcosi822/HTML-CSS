@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+header {
+    text-align: center;
+
+    background-color: rgb(66, 43, 196);
+    color: white;
+}
+
+header> h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+menu > ul > li > a {
+    border-top: 1px solid rgba(106, 116, 245, 0.37);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(77, 55, 202);
+    
+}
+
+ul {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(29, 29, 94, 0.507);
+}
+
+footer {
+    background-color: rgb(72, 87, 228);
+    transform: translateY(62vh);
+    padding: 2%;
+}
