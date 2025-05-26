@@ -20,24 +20,25 @@ header {
     color: white;
 }
 
-header> h1 {
+header > h1 {
     text-align: center;
     padding: 20px;
 }
 
-i#burger {
+#burger {
     font-size: 25px;
     padding: 5px;
 
     cursor: pointer;
 
     background-color: rgb(63, 45, 170);
-    width: 100vw;
+    width: 98%;
 }
 
 menu#itens {
     display: none;
     width: 100vw;
+    
 }
 
 menu > ul > li > a {
@@ -46,7 +47,7 @@ menu > ul > li > a {
     padding: 10px;
     text-align: center;
     background-color: rgb(77, 55, 202);
-    
+    border-radius: 5px;
 }
 
 menu > ul > li > a:hover {

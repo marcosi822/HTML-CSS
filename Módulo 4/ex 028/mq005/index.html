@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="estilos/Media-Q.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
 </head>
-<body>
+<body onresize="mudouSize()">
     <header>
         <h1>Criando um Mini Site Responsivo</h1>
-        <span id="btn-menu" class="material-symbols-rounded" onclick="clickMenu()">menu</span>
+        <i><span  id="burger" class="material-symbols-rounded" onclick="clickMenu()">menu</span></i>
         <menu id="itens">
             <ul>
                 <li><a href="">Opção 1</a></li>
@@ -38,6 +38,18 @@
         <p>All Rights. Developed By Marcozzi</p>
     </footer>
     <script>
+
+        function mudouSize() {  
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+
+        }
+
+
+
         function clickMenu() {
             const itens = document.getElementById('itens');
 
