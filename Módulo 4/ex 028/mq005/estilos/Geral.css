@@ -9,6 +9,8 @@
 
 body {
     background-color: rgba(255, 255, 255, 0.87);
+
+    overflow-x: hidden;
 }
 
 header {
@@ -23,8 +25,19 @@ header> h1 {
     padding: 20px;
 }
 
-main {
-    text-align: center;
+i#burger {
+    font-size: 25px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    background-color: rgb(63, 45, 170);
+    width: 100vw;
+}
+
+menu#itens {
+    display: none;
+    width: 100vw;
 }
 
 menu > ul > li > a {
@@ -34,6 +47,11 @@ menu > ul > li > a {
     text-align: center;
     background-color: rgb(77, 55, 202);
     
+}
+
+menu > ul > li > a:hover {
+    background-color: rgb(63, 45, 170);
+    transition: ease-out 1s;
 }
 
 ul {
@@ -46,8 +64,25 @@ li > a {
     border-top: 1px solid rgba(29, 29, 94, 0.507);
 }
 
+main {
+    margin: auto;
+    width: 92vw;
+    border-radius: 7px;
+
+    padding: 10px;
+    margin-top: 20px;
+
+    background-color: rgba(231, 231, 231, 0.603);
+}
+
+main > div {
+    margin-top: 20px;
+}
+
 footer {
     background-color: rgb(72, 87, 228);
-    transform: translateY(62vh);
-    padding: 2%;
+    text-align: center;
+
+    padding: 20px 0px;
+    transform: translateY(1vh);
 }
